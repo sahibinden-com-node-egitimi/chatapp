@@ -1,5 +1,5 @@
 $(() => {
-  const socket = io({ transports: ['websocket'] });
+  const socket = io('ws://localhost:5000', { transports: ['websocket'] });
 
   socket.on('connect', () => {
     console.log('Connected to server!');
